@@ -1,0 +1,239 @@
+.hover_effect:hover {
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.5);
+    /* width: 300px; */
+    transform: scale(1.1);
+}
+.hover_effect a img {
+    width: 100%;
+    height: auto;
+}
+
+.dec {
+    font-size: 50px;
+}
+.inc {
+    font-size: 50px;
+}
+.quantity_num {
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.inc_dec_quantity{
+    display: flex;
+    align-items: center;
+}
+
+.single_card{
+    display: flex;
+    flex-direction: row;
+}
+
+.single_card img {
+    width: 50%;
+}
+
+
+.shoping_cart_icon {
+    font-size: 35px;
+    color: rgb(37, 206, 21);
+    position: relative;
+}
+
+.shoping_cart_icon .addedCartNumber {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 15px;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    padding-top: 3px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+/* ----------------------------------------Cart style
+                                    ---------------------------------------------- */
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.col-2 {
+    width: 16.3333333333333333;
+}
+.col-9 {
+    width: 75%;
+}
+.cart h3 {
+    font-weight: 400;
+}
+.cart_heading {
+    background: #f4f6f8;
+    padding: 10px;
+}
+.cart_image img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.vaerticalAlign {
+    align-items: center;
+    justify-self: center;
+    margin-top: 8px;
+}
+.text_center {
+    text-align: center;
+}
+.remove_cart {
+    cursor: pointer;
+    font-size: 30px;
+    color: red;
+}
+.summary{
+    padding-left: 10px;
+}
+.summary_heading {
+    background: #f4f6f8;
+    padding: 10px;
+}
+.summary_details {
+    background: orangered;
+    color: white;
+    padding: 15px;
+}
+
+/* --------------------------------Filter Items
+                                         ----------------------------------- */
+.filterItem p{
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+
+/* ---------------------------------------- Footer Section Start Here
+                                --------------------------------------- */
+
+footer{
+    padding: 3rem;
+    background-color: #182334;
+    color: #fff;
+}
+
+footer h2 {
+    color: #fff;
+    cursor: none;
+}
+
+footer li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+footer li:hover {
+    color: var(--primary-color);
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+footer .main-hero-para:hover {
+    margin: 0;
+}
+
+footer .fontawesome-style {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    background-color: transparent;
+    width: 0rem;
+    height: 0rem;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+footer .fontawesome-style:hover {
+    transition: all 1s;
+    animation: rotatefont 1s linear infinite alternate-reverse;
+    color: #fff;
+}
+
+@keyframes rotatefont {
+    0% {
+        transform: scale(0.6);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+/* ---------------------------------------- Footer Section End Here
+                                --------------------------------------- */
+
+
+
+/* ---------------------------Responsive Code
+                                ------------------------------- */
+@media (max-width: 550px) {
+    
+    .follow-links {
+        display: block;
+    }
+    footer .fontawesome-style {
+        font-size: 1.6rem;
+    }
+
+    .single_card{
+        flex-direction: column;
+    }
+    .single_card img{
+        width: 100%;
+    }
+    .detail_content {
+        padding-right: 32px;
+    }
+    .col-2{
+        width: 100%;
+        text-align: center;
+    }
+    .col-9{
+        width: 100%;
+    }
+    .cart_heading{
+        display: none;
+    }
+    .summary-col{
+        width: 100% !important;
+    }
+    .inc_dec_quantity{
+        display: flex;
+        justify-content: center;
+    }
+    .cart h3 {
+        text-align: center;
+    }
+
+    .filterName p {
+        font-size: 15px;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .col-2{
+        width: 100%;
+    }
+    .col-3{
+        width: 100%;
+    }
+    .detail_image{
+        padding-right: 0;
+    }
+}
